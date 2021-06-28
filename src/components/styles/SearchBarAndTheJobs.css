@@ -108,15 +108,29 @@
 }
 
 .rolename {
-    margin: 20px 0px;
+    padding: 20px 0px;
 }
 
 .rolename span {
-    font-size: 22px;
+    font-size: 20px;
 }
 
 .description {
-    height: 105px;
+    height: 120px;
     overflow: hidden;
+    font-size: 18px;
+    color: #96939B;
+}
+
+.buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    height: 45px;
+}
+
+.button {
+    flex: 1;
+
 }
 
