@@ -12,6 +12,7 @@
     border-radius: 10px;
     border: 2px solid #222328;
     display: flex;
+    overflow: hidden;
 }
 
 .search__inputContainer {
@@ -41,5 +42,5 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 0px 10px 10px 0px;
+    /*border-radius: 0px 10px 10px 0px;*/
 }
