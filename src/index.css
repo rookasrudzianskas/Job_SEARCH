@@ -3,7 +3,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: 'Merriweather Sans', sans-serif;  color: white;
-  background: #11121A;
+  /*background: #11121A;*/
 }
 
 body {
@@ -13,6 +13,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #11121A;
+
 }
 
 code {

@@ -2,4 +2,14 @@
     width: 100%;
     max-width: 1250px;
     margin: 0 auto;
+    padding: 0 25px;
+
+}
+
+.search__container {
+    background-color: #1c1c24;
+    height: 60px;
+    border-radius: 10px;
+    border: 2px solid #222328;
+    display: flex;
 }
