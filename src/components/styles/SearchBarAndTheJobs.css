@@ -44,3 +44,9 @@
     justify-content: center;
     /*border-radius: 0px 10px 10px 0px;*/
 }
+
+.search__buttonContainer:hover {
+    cursor: pointer;
+    background-color: #5a81ff;
+    transition: all  0.25s;
+}
