@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import SearchIcon from '@material-ui/icons/Search';
 import "./styles/SearchBarAndTheJobs.css";
 import MoreHorizIcon from '@material-ui/icons/MoreHoriz';
@@ -9,12 +9,24 @@ const SearchBarAndTheJobs = () => {
     const [input, setInput] = useState('');
 
     const getJobs = () => {
-        fetch("data.json").then(response => response.json()).then(data => {
+        // working
+        // fetch("data.json").then(response => response.json()).then(data => {
+        //     console.log(data);
+        //     return data;
+        // })
+
+        fetch('./data.json').then(response => response.json()).then(data => {
             console.log(data);
             return data;
-        })
+        }).catch(err => {
+            // Do something for an error here
+            console.log("Error Reading data " + err);
+        });
     }
+    useEffect(() => {
+        getJobs();
 
+    }, []);
 
     return (
         <div className="searchBarAndTheJobs">
