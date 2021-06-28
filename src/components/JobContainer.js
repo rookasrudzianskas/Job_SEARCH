@@ -8,16 +8,16 @@ const JobContainer = (data) => {
         <div className="jobs-container">
             <div className="job-title">
                 <div className="top">
-                    <img src={data.logo} alt=""/>
+                    <img src={data.data.logo} alt=""/>
                     <MoreHorizIcon />
                 </div>
 
                 <div className="rolename">
-                    <span></span>
+                    <span>{data.data.roleName}</span>
                 </div>
 
                 <div className="description">
-                    <span></span>
+                    <span>{data.data.requirements.content}</span>
                 </div>
 
                 <div className="buttons">

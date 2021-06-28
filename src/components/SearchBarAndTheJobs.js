@@ -8,6 +8,9 @@ const SearchBarAndTheJobs = () => {
 
     const [input, setInput] = useState('');
     const [data, setData] = useState([]);
+    let jobsHTML = "";
+
+    console.log(data);
 
 
 
@@ -36,39 +39,40 @@ const SearchBarAndTheJobs = () => {
     const showJobs = (jobs) => {
         setData(jobs);
 
-        let jobsHTML = "";
-        data.forEach(job => {
-            jobsHTML += `
-            import MoreHorizIcon from "@material-ui/icons/MoreHoriz";
+        // data.forEach(job => {
+        //     jobsHTML += `
+        //     import MoreHorizIcon from "@material-ui/icons/MoreHoriz";
+        //
+        //          <div className="jobs-container">
+        //             <div className="job-title">
+        //         <div className="top">
+        //             <img src={job.logo} alt=""/>
+        //             <MoreHorizIcon />
+        //         </div>
+        //
+        //         <div className="rolename">
+        //             <span>{job.roleName}</span>
+        //         </div>
+        //
+        //         <div className="description">
+        //             <span>{job.requirements.content}</span>
+        //         </div>
+        //
+        //         <div className="buttons">
+        //             <div className="button apply-now">
+        //                 Apply Now
+        //             </div>
+        //             <div className="button">
+        //                 Message
+        //             </div>
+        //         </div>
+        //     </div>
+        //
+        // </div>
+        //     `
+        // })
 
-                 <div className="jobs-container">
-                    <div className="job-title">
-                <div className="top">
-                    <img src={job.logo} alt=""/>
-                    <MoreHorizIcon />
-                </div>
-
-                <div className="rolename">
-                    <span>{job.roleName}</span>
-                </div>
-
-                <div className="description">
-                    <span>{job.requirements.content}</span>
-                </div>
-
-                <div className="buttons">
-                    <div className="button apply-now">
-                        Apply Now
-                    </div>
-                    <div className="button">
-                        Message
-                    </div>
-                </div>
-            </div>
-
-        </div>
-            `
-        })
+        // return jobsHTML;
     }
 
     return (
@@ -88,6 +92,9 @@ const SearchBarAndTheJobs = () => {
 
             <div className="jobs-list">
                 <h3>Showing 25 jobs</h3>
+                {data.map(job => (
+                    <JobContainer key={job.id} data={job} />
+                ))}
                 {/*{data.map(job => (*/}
                 {/*    <JobContainer key={job.id} data={job} />*/}
                 {/*))}*/}
