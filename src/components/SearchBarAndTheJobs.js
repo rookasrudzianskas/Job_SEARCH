@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import SearchIcon from '@material-ui/icons/Search';
 import "./styles/SearchBarAndTheJobs.css";
+import MoreHorizIcon from '@material-ui/icons/MoreHoriz';
 
 const SearchBarAndTheJobs = () => {
 
@@ -25,7 +26,10 @@ const SearchBarAndTheJobs = () => {
                 <h3>Showing 25 jobs</h3>
                 <div className="jobs-container">
                     <div className="job-title">
-                        One Job
+                        <div className="top">
+                            <img src="https://www.gstatic.com/devrel-devsite/prod/v29345390480661f31f1340a20aede1ba9b8f625badf7470697c2e7672c91fc58/firebase/images/touchicon-180.png" alt=""/>
+                            <MoreHorizIcon />
+                        </div>
                     </div>
 
                     <div className="job-title">
