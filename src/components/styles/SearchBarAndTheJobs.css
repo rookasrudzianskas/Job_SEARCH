@@ -81,7 +81,7 @@
     }
 }
 
-@media (max-width: 940px) {
+@media (max-width: 600px) {
     .jobs-list {
         max-width: 1250px;
         width: 100%;
@@ -90,9 +90,9 @@
         margin: 0 auto;
         display: grid;
         /*!* 1 fr means expand my grid to as big as possible *!*/
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
         grid-gap: 40px;
-        grid-template-rows: repeat(2, 1fr);
+        grid-template-rows: repeat(1, 1fr);
         padding: 0 25px;
     }
 }
