@@ -8,6 +8,10 @@ const SearchBarAndTheJobs = () => {
 
     const [input, setInput] = useState('');
 
+    const showJobs = (jobs) => {
+
+    }
+
     const getJobs = () => {
         // working
         // fetch("data.json").then(response => response.json()).then(data => {
@@ -15,7 +19,7 @@ const SearchBarAndTheJobs = () => {
         //     return data;
         // })
 
-        fetch('./data.json').then(response => response.json()).then(data => {
+       return fetch('./data.json').then(response => response.json()).then(data => {
             console.log(data);
             return data;
         }).catch(err => {
