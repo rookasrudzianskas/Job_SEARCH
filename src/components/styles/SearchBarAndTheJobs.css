@@ -83,4 +83,6 @@
     background-color: darkorange;
     border-radius: 10px;
     cursor: pointer;
+    display: flex;
+
 }
