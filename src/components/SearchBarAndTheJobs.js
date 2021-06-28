@@ -39,13 +39,13 @@ const SearchBarAndTheJobs = () => {
     const filterJobs = (jobs, input) => {
         if(input) {
             let filteredJobs = jobs.filter(job => {
+
                 if(job.roleName.toLowerCase().includes(input) || job.type.toLowerCase().includes(input) || job.company.toLowerCase().includes(input) || job.requirements.content.toLowerCase().includes(input)) {
                     return true;
                 } else {
                     return false;
                 }
             })
-
             return filteredJobs;
         } else {
             return jobs;
@@ -55,7 +55,9 @@ const SearchBarAndTheJobs = () => {
     const pressed = (e) => {
         e.preventDefault();
         getJobs().then(jobs => {
-            let filteredJobs = filterJobs(jobs);
+            console.log("👽", jobs)
+            let filteredJobsDone = filterJobs(jobs, input);
+            console.log(filteredJobsDone)
         })
     }
 
