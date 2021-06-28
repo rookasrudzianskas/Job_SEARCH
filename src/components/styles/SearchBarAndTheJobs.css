@@ -70,11 +70,11 @@
 
 .jobs-container {
     display: grid;
-    /* 1 fr means expand my grid to as big as possible */
+    /*!* 1 fr means expand my grid to as big as possible *!*/
     grid-template-columns: repeat(3, 1fr);
-    /*flex-grow: 1;*/
-    grid-gap: 40px;
-    grid-template-rows: repeat(3, 1fr);
+    /*!*!*flex-grow: 1;*!*!*/
+    /*grid-gap: 40px;*/
+    /*grid-template-rows: repeat(3, 1fr);*/
     /*margin: 0 25px;*/
     background-color: #11121A;
 }
@@ -116,7 +116,7 @@
 }
 
 .description {
-    height: 120px;
+    /*height: 120px;*/
     overflow: hidden;
     font-size: 18px;
     color: #96939B;
