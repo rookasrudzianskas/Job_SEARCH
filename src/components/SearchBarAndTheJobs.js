@@ -7,6 +7,8 @@ const SearchBarAndTheJobs = () => {
 
     const [input, setInput] = useState('');
 
+
+
     return (
         <div className="searchBarAndTheJobs">
             <div className="search">
