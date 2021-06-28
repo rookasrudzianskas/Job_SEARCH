@@ -34,3 +34,12 @@
     font-size: 20px !important;
     margin-left: 25px;
 }
+
+.search__buttonContainer {
+    background-color: #3060ff;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0px 10px 10px 0px;
+}
