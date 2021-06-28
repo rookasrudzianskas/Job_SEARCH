@@ -38,11 +38,17 @@ const SearchBarAndTheJobs = () => {
 
     const filterJobs = (jobs, input) => {
         if(input) {
-            let filteredItems = jobs.filter(job => {
+            let filteredJobs = jobs.filter(job => {
                 if(job.roleName.toLowerCase().includes(input) || job.type.toLowerCase().includes(input) || job.company.toLowerCase().includes(input) || job.requirements.content.toLowerCase().includes(input)) {
-
+                    return true;
+                } else {
+                    return false;
                 }
             })
+
+            return filteredJobs;
+        } else {
+            return jobs;
         }
     }
 
