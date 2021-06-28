@@ -1,0 +1,11 @@
+.header {
+    background-color: #1c1c24;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__container {
+    background-color: pink;
+}
