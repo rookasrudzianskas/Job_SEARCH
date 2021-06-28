@@ -55,7 +55,7 @@ const SearchBarAndTheJobs = () => {
     const pressed = (e) => {
         e.preventDefault();
         getJobs().then(jobs => {
-            let filteredJobs = filterJobs();
+            let filteredJobs = filterJobs(jobs);
         })
     }
 
