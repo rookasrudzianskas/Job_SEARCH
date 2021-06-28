@@ -7,5 +7,17 @@
 }
 
 .header__container {
-    background-color: pink;
+    max-width: 1250px;
+    width: 100%;
+    display: flex;
+
+}
+
+.header__container .header__logo {
+    height: 30px;
+}
+
+.header__container .header__logo > img {
+    height: 100%;
+    border-radius: 50%;
 }
