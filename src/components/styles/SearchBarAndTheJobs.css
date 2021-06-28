@@ -72,9 +72,9 @@
     display: grid;
     /* 1 fr means expand my grid to as big as possible */
     grid-template-columns: repeat(3, 1fr);
-    flex-grow: 1;
+    /*flex-grow: 1;*/
     grid-gap: 40px;
-    /*grid-template-rows: repeat(3, 1fr);*/
+    grid-template-rows: repeat(3, 1fr);
     /*margin: 0 25px;*/
     background-color: #11121A;
 }
@@ -85,7 +85,7 @@
     cursor: pointer;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     color: #fff;
     padding: 30px;
 }
@@ -138,12 +138,14 @@
     color: #96939B;
     background-color: #2e2e39;
     font-size: 14px;
-    margin-left: 15px;
-    margin-right: 15px;
+    /*margin-left: 15px;*/
+    /*margin-right: 15px;*/
 }
 
 .apply-now {
     color: #fff;
     background-color: #3060ff;
+    margin-right: 15px;
+
 }
 
