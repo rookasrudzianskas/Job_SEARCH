@@ -70,4 +70,11 @@
 
 .jobs-container {
     display: grid;
+    /* 1 fr means expand my grid to as big as possible */
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+}
+
+.job-title {
+    background-color: pink;
 }
