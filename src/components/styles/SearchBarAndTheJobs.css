@@ -106,3 +106,7 @@
     object-fit: contain;
     height: 50px;
 }
+
+.title {
+    margin: 20px 0px;
+}
