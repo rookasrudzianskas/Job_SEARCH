@@ -131,6 +131,19 @@
 
 .button {
     flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    color: #96939B;
+    background-color: #2e2e39;
+    font-size: 14px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
 
+.apply-now {
+    color: #fff;
+    background-color: #3060ff;
 }
 
