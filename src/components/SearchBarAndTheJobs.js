@@ -88,10 +88,12 @@ const SearchBarAndTheJobs = () => {
                         <span>Find a Job</span>
                     </div>
                 </div>
+            <div className="something">
+                <h3>Showing 25 jobs</h3>
+            </div>
             </div>
 
             <div className="jobs-list">
-                <h3>Showing 25 jobs</h3>
                 {data.map(job => (
                     <JobContainer key={job.id} data={job} />
                 ))}

@@ -57,24 +57,29 @@
     background-color: #11121A;
     height: 100vh;
     margin: 0 auto;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    /*!* 1 fr means expand my grid to as big as possible *!*/
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+    grid-template-rows: repeat(3, 1fr);
     padding: 0 25px;
 }
 
-.jobs-list h3 {
+.something h3 {
+    display: flex;
+    max-width: 1250px;
+    width: 100%;
     margin-left: 25px;
     margin-bottom: 20px;
     margin-top: 20px;
 }
 
 .jobs-container {
-    display: grid;
-    /*!* 1 fr means expand my grid to as big as possible *!*/
-    grid-template-columns: repeat(3, 1fr);
+    /*display: grid;*/
+    /*!*!* 1 fr means expand my grid to as big as possible *!*!*/
+    /*grid-template-columns: repeat(3, 1fr);*/
     /*!*!*flex-grow: 1;*!*!*/
-    /*grid-gap: 40px;*/
-    /*grid-template-rows: repeat(3, 1fr);*/
+
     /*margin: 0 25px;*/
     background-color: #11121A;
 }
@@ -116,7 +121,7 @@
 }
 
 .description {
-    /*height: 120px;*/
+    height: 140px;
     overflow: hidden;
     font-size: 18px;
     color: #96939B;
