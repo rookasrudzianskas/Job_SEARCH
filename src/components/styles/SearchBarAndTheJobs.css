@@ -107,6 +107,16 @@
     height: 50px;
 }
 
-.title {
+.rolename {
     margin: 20px 0px;
 }
+
+.rolename span {
+    font-size: 22px;
+}
+
+.description {
+    height: 105px;
+    overflow: hidden;
+}
+
