@@ -7,6 +7,7 @@ import JobContainer from "./JobContainer";
 const SearchBarAndTheJobs = () => {
 
     const [input, setInput] = useState('');
+    const [data, setData] = useState([]);
 
 
 
@@ -18,7 +19,6 @@ const SearchBarAndTheJobs = () => {
         // })
 
        return fetch('./data.json').then(response => response.json()).then(data => {
-            console.log(data);
             return data;
         }).catch(err => {
             // Do something for an error here
@@ -34,7 +34,41 @@ const SearchBarAndTheJobs = () => {
     }, []);
 
     const showJobs = (jobs) => {
-        console.log("Jobs here", jobs);
+        setData(jobs);
+
+        let jobsHTML = "";
+        data.forEach(job => {
+            jobsHTML += `
+            import MoreHorizIcon from "@material-ui/icons/MoreHoriz";
+
+                 <div className="jobs-container">
+                    <div className="job-title">
+                <div className="top">
+                    <img src={job.logo} alt=""/>
+                    <MoreHorizIcon />
+                </div>
+
+                <div className="rolename">
+                    <span>{job.roleName}</span>
+                </div>
+
+                <div className="description">
+                    <span>{job.requirements.content}</span>
+                </div>
+
+                <div className="buttons">
+                    <div className="button apply-now">
+                        Apply Now
+                    </div>
+                    <div className="button">
+                        Message
+                    </div>
+                </div>
+            </div>
+
+        </div>
+            `
+        })
     }
 
     return (
@@ -54,7 +88,9 @@ const SearchBarAndTheJobs = () => {
 
             <div className="jobs-list">
                 <h3>Showing 25 jobs</h3>
-                <JobContainer />
+                {/*{data.map(job => (*/}
+                {/*    <JobContainer key={job.id} data={job} />*/}
+                {/*))}*/}
             </div>
         </div>
     );

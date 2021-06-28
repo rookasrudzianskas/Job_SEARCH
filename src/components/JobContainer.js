@@ -2,21 +2,22 @@ import React from 'react';
 import MoreHorizIcon from "@material-ui/icons/MoreHoriz";
 import "./styles/SearchBarAndTheJobs.css";
 
-const JobContainer = () => {
+const JobContainer = (data) => {
+
     return (
         <div className="jobs-container">
             <div className="job-title">
                 <div className="top">
-                    <img src="https://www.gstatic.com/devrel-devsite/prod/v29345390480661f31f1340a20aede1ba9b8f625badf7470697c2e7672c91fc58/firebase/images/touchicon-180.png" alt=""/>
+                    <img src={data.logo} alt=""/>
                     <MoreHorizIcon />
                 </div>
 
                 <div className="rolename">
-                    <span>Lead Product Design</span>
+                    <span></span>
                 </div>
 
                 <div className="description">
-                    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque consectetur cumque deserunt enim eum labore nostrum quaerat repellat sequi tempora?</span>
+                    <span></span>
                 </div>
 
                 <div className="buttons">
@@ -27,30 +28,6 @@ const JobContainer = () => {
                         Message
                     </div>
                 </div>
-            </div>
-
-            <div className="job-title">
-                One Job
-            </div>
-
-            <div className="job-title">
-                One Job
-            </div>
-
-            <div className="job-title">
-                One Job
-            </div>
-
-            <div className="job-title">
-                One Job
-            </div>
-
-            <div className="job-title">
-                One Job
-            </div>
-
-            <div className="job-title">
-                One Job
             </div>
 
         </div>
