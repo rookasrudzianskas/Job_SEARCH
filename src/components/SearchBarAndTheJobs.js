@@ -8,9 +8,7 @@ const SearchBarAndTheJobs = () => {
 
     const [input, setInput] = useState('');
 
-    const showJobs = (jobs) => {
 
-    }
 
     const getJobs = () => {
         // working
@@ -28,9 +26,16 @@ const SearchBarAndTheJobs = () => {
         });
     }
     useEffect(() => {
-        getJobs();
+        // then we have the jobs, it creates a function, and invokes the another function, which shows something else.
+        getJobs().then(data => {
+            showJobs(data);
+        });
 
     }, []);
+
+    const showJobs = (jobs) => {
+        console.log("Jobs here", jobs);
+    }
 
     return (
         <div className="searchBarAndTheJobs">
