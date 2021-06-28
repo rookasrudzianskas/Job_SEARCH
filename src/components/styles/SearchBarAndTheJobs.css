@@ -80,7 +80,7 @@
 }
 
 .job-title {
-    background-color: darkorange;
+    background-color: #1c1c24;
     border-radius: 10px;
     cursor: pointer;
     display: flex;
@@ -93,4 +93,17 @@
 .job-title:hover {
     transform: scale(1.05);
     transition: all 0.25s ease-in-out;
+}
+
+.top {
+    background-color: aquamarine;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.top > img {
+    width: 50px;
+    object-fit: contain;
+    height: 50px;
 }
