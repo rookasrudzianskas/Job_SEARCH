@@ -89,7 +89,7 @@ const SearchBarAndTheJobs = () => {
                     </div>
                 </div>
             <div className="something">
-                <h3>Showing 25 jobs</h3>
+                <h3>Showing {data.length} jobs</h3>
             </div>
             </div>
 

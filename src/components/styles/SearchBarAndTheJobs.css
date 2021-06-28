@@ -110,6 +110,7 @@
     width: 50px;
     object-fit: contain;
     height: 50px;
+    border-radius: 10px;
 }
 
 .rolename {
