@@ -52,6 +52,13 @@ const SearchBarAndTheJobs = () => {
         }
     }
 
+    const pressed = (e) => {
+        e.preventDefault();
+        getJobs().then(jobs => {
+            let filteredJobs = filterJobs();
+        })
+    }
+
     const showJobs = (jobs) => {
         setData(jobs);
 
@@ -101,7 +108,7 @@ const SearchBarAndTheJobs = () => {
                     </div>
 
                     <div className="search__buttonContainer">
-                        <span>Find a Job</span>
+                        <span onClick={pressed}>Find a Job</span>
                     </div>
                 </div>
             <div className="something">
