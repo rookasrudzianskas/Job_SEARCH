@@ -20,6 +20,40 @@ const SearchBarAndTheJobs = () => {
                     </div>
                 </div>
             </div>
+
+            <div className="jobs-list">
+                <h3>Showing 25 jobs</h3>
+                <div className="jobs-container">
+                    <div className="job-title">
+                        One Job
+                    </div>
+
+                    <div className="job-title">
+                        One Job
+                    </div>
+
+                    <div className="job-title">
+                        One Job
+                    </div>
+
+                    <div className="job-title">
+                        One Job
+                    </div>
+
+                    <div className="job-title">
+                        One Job
+                    </div>
+
+                    <div className="job-title">
+                        One Job
+                    </div>
+
+                    <div className="job-title">
+                        One Job
+                    </div>
+
+                </div>
+            </div>
         </div>
     );
 };

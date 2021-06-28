@@ -50,3 +50,14 @@
     background-color: #5a81ff;
     transition: all  0.25s;
 }
+
+.jobs-list {
+    max-width: 1250px;
+    width: 100%;
+    background-color: #11121A;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 0 25px;
+}
