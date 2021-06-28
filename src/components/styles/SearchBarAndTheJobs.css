@@ -84,5 +84,13 @@
     border-radius: 10px;
     cursor: pointer;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    padding: 30px;
+}
 
+.job-title:hover {
+    transform: scale(1.05);
+    transition: all 0.25s ease-in-out;
 }
