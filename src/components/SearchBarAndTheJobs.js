@@ -10,9 +10,6 @@ const SearchBarAndTheJobs = () => {
     const [data, setData] = useState([]);
     let jobsHTML = "";
 
-    console.log(data);
-
-
 
     const getJobs = () => {
         // working
@@ -55,10 +52,12 @@ const SearchBarAndTheJobs = () => {
     const pressed = (e) => {
         e.preventDefault();
         getJobs().then(jobs => {
-            console.log("👽", jobs)
             let filteredJobsDone = filterJobs(jobs, input);
-            console.log(filteredJobsDone)
+            // console.log(filteredJobsDone)
+            showJobs(filteredJobsDone);
+            return filteredJobsDone;
         })
+
     }
 
     const showJobs = (jobs) => {
