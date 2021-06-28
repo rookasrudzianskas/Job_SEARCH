@@ -36,6 +36,16 @@ const SearchBarAndTheJobs = () => {
 
     }, []);
 
+    const filterJobs = (jobs, input) => {
+        if(input) {
+            let filteredItems = jobs.filter(job => {
+                if(job.roleName.toLowerCase().includes(input)) {
+
+                }
+            })
+        }
+    }
+
     const showJobs = (jobs) => {
         setData(jobs);
 
