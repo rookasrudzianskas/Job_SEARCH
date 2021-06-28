@@ -123,6 +123,7 @@
 
 .description {
     height: 140px;
+    flex-grow: 1;
     overflow: hidden;
     font-size: 18px;
     color: #96939B;
