@@ -58,6 +58,7 @@ const SearchBarAndTheJobs = () => {
             return filteredJobsDone;
         })
 
+        setInput("");
     }
 
     const showJobs = (jobs) => {
